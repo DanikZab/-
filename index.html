@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="DESCRIPTION" content="D.iK.iJ - JavaScript примеры - Наглядный ввод HTML - JavaScript скрипты и Джава (Java Script) приколы">
+<meta name="KEYWORDS" content="D.iK.iJ, наглядный, ввод, текста, Хтмл, HTML, Java, Script, JavaScript, скрипты, джава">
+<title>D.iK.iJ / JavaScript примеры / Наглядный ввод HTML (Javascript)</title>
+<link rel="stylesheet" href="/style.css" type="text/css">
+<link rel="stylesheet" href="/light.css" type="text/css"><script language="JavaScript" TYPE="text/javascript" src="/4italka/script.js"></script>
+<link rel="icon" href="https://dikij.com/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://dikij.com/favicon.ico" type="image/x-icon">
+<meta name=viewport content="width=device-width, height=device-height, initial-scale=1">
+</head>
+<body><div id="bodyfon">
+<noscript><center><img src="/Loading.gif"><a rel="nofollow" href="/nojs.html" target="_parent"><b><font color="red">ERROR! NO Java Script</font></a></b></center></noscript>
+<h1><a href="https://dikij.com/" target="_parent">D.iK.iJ</a> / <a href="https://dikij.com/4italka/" target="_parent">JavaScript примеры</a> / Наглядный ввод HTML (Javascript) [<a href="javascript: download();" class="pod">скачать</a>]</h1>
+<textarea type="txt" id="download" onclick="this.select();" style="display: none;"></textarea> 
+
+
+<br><span id="content"><center><form action="" method="post">
+<textarea onkeyup='pred();' onfocus='pred();' onchange='pred();' id='textarea' cols='121' rows='15' name='msg' id='textarea' style='width: 100%; box-sizing: border-box; font: 12px Verdana;'>
+Данный JavaScript - <b>наглядный</b> ввод HTML
+
++ счетчик введенных символов...
+<img src='https://dikij.com/dikij/dikij1.png'>
+
+<h3>Попробуйте вводить текст с HTMLв форму :)</h3></textarea>
+
+<input type="submit" onmouseover="document.getElementById('textarea').select(this);" title='Ctrl+C перед отправкой спасает от потерь :-)' type='submit' value='Не нажимать :)' onclick="closeIt(); return false;"><input type="reset" value='х'><br><br>
+
+<table style='background-color: white; width: 100%; box-sizing: border-box; border:1px #CCCCCC dotted; padding: 1px; margin: 1px;' width='100%' border='0'><tr><td><span id='predtxt3'></span><span id='predtxt'></span></td></tr></table>
+</form></center>
+
+<script language="JavaScript">
+function pred() {
+var text=document.getElementById('textarea').value;
+
+text = text.replace(/\r\n/g, '<br>');
+text = text.replace(/\r/g, '<br>');
+text = text.replace(/\n/g, '<br>');
+text = text.replace(/   /g, ' ');
+text = text.replace(/  /g, ' ');
+text = text.replace(/  /g, ' ');
+
+text = text.replace(/\&lt;/g, "<");
+text = text.replace(/\&gt;/g, ">");
+text = text.replace(/\&amp;/g, "&");
+text = text.replace(/\&quot;/g, "\"");
+document.getElementById("predtxt").innerHTML = text;
+
+var length=(300-document.getElementById('textarea').value.length);
+if(length<0) {length='<font color=red>'+length+'</font>';}
+length='<font color=green><b>'+length+'</b></font>:&nbsp;';
+document.getElementById("predtxt3").innerHTML = length; // Длинна
+}
+
+function dosmilie(id){
+var text=document.getElementById('textarea').value;
+document.getElementById('textarea').value = text+id;
+}
+
+pred();
+--></script></span>
+<script>
+function closeIt() {
+close();
+if(window.parent.comment) {window.parent.comment(this.href, 't11');}
+}
+</script>
+
+<br>Что делает данный скрипт? Он показывает, как будет выглядеть введенный пользователем текст после отправки сообщения. Думаю, многим пользователям и владельцам сайтов это будет очень удобно.
+<br>Также, скрипт предупреждает о превышении количества символов в сообщении (цветом). В принципе, все это достаточно легко настраивается.
+<br>Как обычно, сам скрипт - <a href="javascript: download();" class="pod">в коде страницы</a>.
+
+<br><br>
+
+<script type="text/javascript"><!--
+//Загрузка в 4italka
+if(document.getElementById('content')) {
+var content=document.getElementById('content').innerHTML;
+content = content.replace(/\r\n\r\n\r\n/gi,"\r\n\r\n");
+content = content.replace(/<!--/gi,"");
+content = content.replace(/\/\/-->/gi,"");
+content = content.replace(/-->/gi,"");
+content = content.replace(/\/\/\//gi,"");
+document.getElementById("download").innerHTML = content;
+}
+//--></script>
+
+<!--noindex-->
+<script>
+function newMyWindow(e) {
+var h = 550, w = 650;
+window.open(e, '', 'scrollbars=1,height='+Math.min(h, screen.availHeight)+',width='+Math.min(w, screen.availWidth)+',left='+Math.max(0, (screen.availWidth - w)/2)+',top='+Math.max(0, (screen.availHeight - h)/2));
+}
+var url = encodeURI(document.location.href);
+var title = encodeURI(document.title);
+document.write('<div class="socseti"><div style="background: #48729e;" onClick="newMyWindow(\'https://vk.com/share.php?url='+url+'&title='+title+'\');" title="Вконтакте">В</div><!--<div style="background: #3b5998;" onClick="newMyWindow(\'https://www.facebook.com/sharer.php?src=sp&u='+url+'&title='+title+'\');" title="Фейсбук">f</div>--><div style="background: #eb722e;" onClick="newMyWindow(\'https://connect.ok.ru/offer?url='+url+'&title='+title+'\');" title="Одноклассники">ОК</div><div style="background: #168de2; line-height: 29px;" onClick="newMyWindow(\'https://connect.mail.ru/share?url='+url+'&title='+title+'\');" title="Мой Мир">@</div><div style="background: #c20724;" onClick="newMyWindow(\'https://pinterest.com/pin/create/button/?url='+url+'&description='+title+'\');" title="Пинтерест">P</div><div style="background: #000;" onClick="newMyWindow(\'https://twitter.com/intent/tweet?text='+title+'&url='+url+'\');" title="Твиттер">&#120143;</div><div style="background: #000000;" onClick="newMyWindow(\'https://digg.com/submit?url='+url+'&title='+title+'\');" title="Дигг">d</div><div style="background: #ff4500;" onClick="newMyWindow(\'https://www.reddit.com/submit?url='+url+'&title='+title+'\');" title="Реддит">R</div><div style="background: #24d666;" onClick="newMyWindow(\'https://www.evernote.com/clip.action?title='+title+'&url='+url+'\');" title="Evernote">E</div><div style="background: #0d425a;" onClick="newMyWindow(\'https://www.livejournal.com/update.bml?subject='+title+'&event='+url+'\');" title="LiveJournal">Lj</div><div style="background: #ee4056;" onClick="newMyWindow(\'https://getpocket.com/save?url='+url+'&title='+title+'\');" title="Pocket">P</div><div style="background: #547093;" onClick="newMyWindow(\'https://www.tumblr.com/share/link?url='+url+'\');" title="Tumblr">t</div><div style="background: #7b519d;" onClick="newMyWindow(\'viber://forward?text='+title+'%20'+url+'\');" title="Viber">V</div><div style="background: #65bc54;" onClick="newMyWindow(\'https://api.whatsapp.com/send?text='+title+'%20'+url+'\');" title="WhatsApp">Wa</div><div style="background: #00aff0;" onClick="newMyWindow(\'https://web.skype.com/share?url='+url+'\');" title="Skype">S</div><div style="background: #64a9dc;" onClick="newMyWindow(\'https://telegram.me/share/url?url='+url+'&text='+title+'\');" title="Telegram">T</div></div>');
+</script>
+<style>
+.socseti {pointer-events: none; text-align: center; margin-left: auto; margin-right: auto; width: auto; position: fixed; z-index: 1; bottom: 0px; left: 8px; right: 8px;}
+.socseti div {pointer-events: all; position: relative; bottom: 2px; margin: 2px; text-decoration: none; display: inline-block; vertical-align: top; width: 30px; height: 30px; line-height: 31px; border-radius: 5px; color: #fff; font-size: 17px; white-space: nowrap; cursor: pointer; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s;}
+.socseti div:hover {bottom: 12px;}
+.socseti div:after {content: ""; display: block; width: 100%; height: auto; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; pointer-events: all;}
+.socseti div:hover:after {bottom: -12px; -webkit-transition: bottom 0.3s; -moz-transition: bottom 0.3s; -o-transition: bottom 0.3s; transition: bottom 0.3s;}
+
+@media screen and (max-width: 750px) {
+.socseti {position: static; overflow: visible; pointer-events: all;}
+.socseti div {bottom: 0px; transition: bottom, box-shadow, 0.3s;}
+.socseti div:hover {box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2); bottom: 1px;}
+.socseti div:after {display: none !important;}
+}
+@media screen and (max-height: 715px) {
+.socseti {position: static; overflow: visible; pointer-events: all;}
+.socseti div {bottom: 0px; transition: bottom, box-shadow, 0.3s;}
+.socseti div:hover {box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2); bottom: 1px;}
+.socseti div:after {display: none !important;}
+}
+</style>
+<!--/noindex-->
+<!--noindex-->
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(44673505, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44673505" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<img src="https://counter.rambler.ru/top100.cnt?1293761" alt="" width="1" height="1" border="0">
+<iframe src="/ip-zapis.php?from=/4italka/naglyadny-vvod.html" width="1" height="1" border="0" frameborder="0" scrolling="no"></iframe>
+<!--/noindex-->
+
+<style>
+body, html {height: 100%;}
+</style>
+
+</div></body>
+</html>
